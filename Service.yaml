@@ -9,7 +9,7 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: "ip"
 spec:
   selector:
-    app: fastapi
+    app: svelte
   ports:
     - port: 80
       targetPort: 80

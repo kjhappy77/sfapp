@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: svelte-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: svelte
+  template:
+    metadata:
+      name: svelte-for-fastapi-connection
+      labels:
+        app: svelte
+    spec:
+      containers:
+      - name: svelte-container
+        image: 816040392320.dkr.ecr.ap-northeast-2.amazonaws.com/jimmy-svelte:1
+        ports:
+          - containerPort: 80
+
