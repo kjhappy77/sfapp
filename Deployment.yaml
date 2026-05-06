@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi
+  template:
+    metadata:
+      name: fastapi-for-svelte-connection
+      labels:
+        app: fastapi
+    spec:
+      containers:
+      - name: fastapi-container
+        image: 816040392320.dkr.ecr.ap-northeast-2.amazonaws.com/jimmy-fastapi:1
+        ports:
+          - containerPort: 8000
