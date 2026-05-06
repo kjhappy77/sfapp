@@ -12,5 +12,5 @@ spec:
     app: fastapi
   ports:
     - port: 80
-      targetPort: 8000
+      targetPort: 80
   type: LoadBalancer
