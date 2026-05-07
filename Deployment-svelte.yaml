@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: svelte-container
-        image: 816040392320.dkr.ecr.ap-northeast-2.amazonaws.com/jimmy-svelte:1
+        image: 816040392320.dkr.ecr.ap-northeast-2.amazonaws.com/jimmy-svelte:3
         ports:
           - containerPort: 80
 
